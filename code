@@ -1,0 +1,9 @@
+from urllib.request import urlopen
+
+from bs4 import BeautifulSoup
+import pandas as pd
+import re
+
+# Python 3.5.2 :: Anaconda 4.2.0 (x86_64)
+# pandas==0.18.1
+# beautifulsoup4==4.5.1
