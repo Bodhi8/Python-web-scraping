@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Specify url: url
-http://www.gettyimages.com/
+url = 'https://www.python.org/~guido/'
 
 # Package the request, send the request and catch the response: r
 r = requests.get(url)
@@ -15,7 +15,7 @@ html_doc = r.text
 soup = BeautifulSoup(html_doc)
 
 # Prettify the BeautifulSoup object: pretty_soup
-soup = BeautifulSoup(html_doc)
+pretty_soup = soup.prettify()
 
 # Print the response
 print(pretty_soup)
